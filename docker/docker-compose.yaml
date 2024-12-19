@@ -1,0 +1,7 @@
+name: amrate-react
+
+services:
+  app:
+    image: bimmbin/amrate-react
+    ports:
+      - '8000:80'
