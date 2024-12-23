@@ -16,12 +16,26 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        pop: "'poppins', Poppins",
+      },
+      backgroundImage: theme => ({
+        accent: 'linear-gradient(152deg,hsl(var(--accent1)),50%,hsl(var(--accent2)))',
+        // You can add more custom classes here
+      }),
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        foreground: {
+          DEFAULT: 'hsl(var(--foreground))',
+          mild: 'hsl(var(--foreground-mild))',
+          active: 'hsl(var(--foreground-active))',
+        },
+        accent: {
+          foreground: 'hsl(var(--accent-foreground))',
+        },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
@@ -37,10 +51,6 @@ module.exports = {
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',

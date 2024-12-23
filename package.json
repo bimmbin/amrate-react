@@ -39,6 +39,7 @@
     "react-hook-form": "^7.50.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "typeface-poppins": "^1.1.13",
     "zod": "^3.22.4",
     "zustand": "^4.5.0"
   },
@@ -75,6 +76,7 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
+    "vite-plugin-svgr": "^4.3.0",
     "vitest": "^1.2.2"
   },
   "packageManager": "pnpm@9.1.1"
